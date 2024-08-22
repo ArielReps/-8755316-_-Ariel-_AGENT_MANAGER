@@ -9,6 +9,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("Default")));
 
 // הוספת סרוויסים
+builder.Services.AddScoped<IControlService, ControlService>();
 builder.Services.AddScoped<IAgentService, AgentService>();
 builder.Services.AddScoped<ITargetService, TargetService>();
 builder.Services.AddScoped<IMissionService, MissionService>();

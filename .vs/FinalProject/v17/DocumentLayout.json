@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\controlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\controlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\itargetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\itargetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\createagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\createagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,32 +19,60 @@
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\icontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\icontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\createagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\createagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\basemodels\\entityinspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\basemodels\\entityinspace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\iagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\iagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\targetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\createtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\createtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\basemodels\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\mission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,223 +102,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgentsController.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\AgentsController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\AgentsController.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\AgentsController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\AgentsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIAgwCYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T07:23:06.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TargetsController.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\TargetsController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\TargetsController.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\TargetsController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\TargetsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T07:27:14.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ITargetService.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\ITargetService.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Services\\IServices\\ITargetService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\ITargetService.cs",
-              "RelativeToolTip": "FinalProject\\Services\\IServices\\ITargetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:53:29.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MissionsController.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Controllers\\MissionsController.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs",
-              "RelativeToolTip": "FinalProject\\Controllers\\MissionsController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswCwAAAAFAAAAAAAAAA==",
+              "Title": "ControlService.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\ControlService.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Services\\ControlService.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\ControlService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\ControlService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAMwCAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T07:27:58.943Z",
+              "WhenOpened": "2024-08-22T11:45:10.808Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CreateAgent.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
-              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IControlService.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IControlService.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Services\\IServices\\IControlService.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IControlService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\IServices\\IControlService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:55:41.604Z",
+              "WhenOpened": "2024-08-22T11:44:54.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
-              "RelativeToolTip": "FinalProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:42:44.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Direction.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
-              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:56:02.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CreateTarget.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
-              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:55:55.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EntityInSpace.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
-              "RelativeToolTip": "FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:55:02.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Location.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Location.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\Location.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Location.cs",
-              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\Location.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:56:09.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "IMissionService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IMissionService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\IServices\\IMissionService.cs",
               "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IMissionService.cs",
               "RelativeToolTip": "FinalProject\\Services\\IServices\\IMissionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T06:53:47.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\Enums.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\BaseModels\\Enums.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\Enums.cs",
-              "RelativeToolTip": "FinalProject\\Models\\BaseModels\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeToolTip": "FinalProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:55:32.225Z",
+              "WhenOpened": "2024-08-22T06:42:44.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IAgentService.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IAgentService.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Services\\IServices\\IAgentService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IAgentService.cs",
-              "RelativeToolTip": "FinalProject\\Services\\IServices\\IAgentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Direction.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
+              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:53:12.5Z",
+              "WhenOpened": "2024-08-22T06:56:02.215Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\appsettings.json",
-              "RelativeDocumentMoniker": "FinalProject\\appsettings.json",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\appsettings.json",
-              "RelativeToolTip": "FinalProject\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-22T06:56:33.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "FinalProject\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "AgentsController.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\AgentsController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\AgentsController.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\AgentsController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\AgentsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:45:32.896Z",
+              "WhenOpened": "2024-08-22T07:23:06.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Target.cs",
-              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\Target.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Models\\Target.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\Target.cs",
-              "RelativeToolTip": "FinalProject\\Models\\Target.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CreateAgent.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
+              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\CreateAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:44:34.107Z",
+              "WhenOpened": "2024-08-22T06:55:41.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "Mission.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\Mission.cs",
               "RelativeDocumentMoniker": "FinalProject\\Models\\Mission.cs",
@@ -327,7 +210,120 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EntityInSpace.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
+              "RelativeToolTip": "FinalProject\\Models\\BaseModels\\EntityInSpace.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T06:55:02.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TargetsController.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\TargetsController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\TargetsController.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\TargetsController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\TargetsController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAARwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:27:14.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "FinalProject\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Properties\\launchSettings.json",
+              "RelativeToolTip": "FinalProject\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-22T09:46:28.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateTarget.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
+              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\CreateTarget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T06:55:55.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\appsettings.json",
+              "RelativeDocumentMoniker": "FinalProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\appsettings.json",
+              "RelativeToolTip": "FinalProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-22T06:56:33.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Location.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\Location.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Location.cs",
+              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\Location.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T06:56:09.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\Enums.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\BaseModels\\Enums.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\BaseModels\\Enums.cs",
+              "RelativeToolTip": "FinalProject\\Models\\BaseModels\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T06:55:32.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "FinalProject\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T06:45:32.896Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 19,
+              "Title": "Target.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\Target.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Models\\Target.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\Target.cs",
+              "RelativeToolTip": "FinalProject\\Models\\Target.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T06:44:34.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Agent.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\Agent.cs",
               "RelativeDocumentMoniker": "FinalProject\\Models\\Agent.cs",
@@ -335,12 +331,11 @@
               "RelativeToolTip": "FinalProject\\Models\\Agent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:44:30.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T06:44:30.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "FinalProject\\WeatherForecast.cs",
@@ -348,52 +343,64 @@
               "RelativeToolTip": "FinalProject\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T06:43:38.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T06:43:38.136Z"
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "TargetService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\TargetService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\TargetService.cs",
               "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\TargetService.cs",
               "RelativeToolTip": "FinalProject\\Services\\TargetService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAIAgwCIAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAARwEkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:37:22.604Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "AgentService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\AgentService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\AgentService.cs",
               "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\AgentService.cs",
               "RelativeToolTip": "FinalProject\\Services\\AgentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAEA5wEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:36:50.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "MissionService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\MissionService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\MissionService.cs",
               "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\MissionService.cs",
               "RelativeToolTip": "FinalProject\\Services\\MissionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:42:31.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MissionsController.cs",
+              "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Controllers\\MissionsController.cs",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\MissionsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAARwBUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T07:27:58.943Z",
               "EditorCaption": ""
             }
           ]

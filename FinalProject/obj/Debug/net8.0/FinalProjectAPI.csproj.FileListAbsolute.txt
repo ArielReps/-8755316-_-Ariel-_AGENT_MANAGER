@@ -134,3 +134,4 @@ C:\Users\internet\source\repos\FinalProject\FinalProject\FinalProject\obj\Debug\
 C:\Users\internet\source\repos\FinalProject\FinalProject\FinalProject\obj\Debug\net8.0\FinalProjectAPI.pdb
 C:\Users\internet\source\repos\FinalProject\FinalProject\FinalProject\obj\Debug\net8.0\FinalProjectAPI.genruntimeconfig.cache
 C:\Users\internet\source\repos\FinalProject\FinalProject\FinalProject\obj\Debug\net8.0\ref\FinalProjectAPI.dll
+C:\Users\internet\source\repos\FinalProject\FinalProject\FinalProject\obj\Debug\net8.0\FinalProjectAPI.sourcelink.json
