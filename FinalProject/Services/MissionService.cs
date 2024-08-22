@@ -10,9 +10,13 @@ namespace FinalProjectAPI.Services
     public class MissionService : IMissionService
     {
         private readonly AppDbContext _context;
-        public MissionService(AppDbContext db)
+        private readonly IControlService _controlService;
+
+        
+        public MissionService(AppDbContext db, IControlService controlService)
         {
             _context = db;
+            _controlService = controlService;
         }
         public async Task<bool> UpdateStatus(int id, MissionStatus status)
         {
@@ -30,9 +34,16 @@ namespace FinalProjectAPI.Services
             return true;
         }
 
-        public Task DirectMission()
+        public async Task DirectMission()
         {
-            throw new NotImplementedException();
+            List<Mission> missions = await _context.Missions.ToListAsync();
+            foreach (var mission in missions)
+            {
+                RecDirection dir = _controlService.DirectAgent(mission);
+                mission.Agent.LocationX += dir.x;
+                mission.Agent.LocationY += dir.y;
+            }
+            await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Mission>> GetMissions()
@@ -40,9 +51,9 @@ namespace FinalProjectAPI.Services
             return await _context.Missions.ToListAsync();
         }
 
-        public Task<IEnumerable<Mission>> OfferMissions()
+        public async Task<IEnumerable<Mission>> OfferMissions()
         {
-            throw new NotImplementedException();
+            return _controlService.GetMissionOffers();
         }
 
         public async Task<MissionPK> Create(int agentId, int targetId)
@@ -80,6 +91,10 @@ namespace FinalProjectAPI.Services
             return new() { AgentId = mission.AgentId, TargetId = mission.TargetId };
         }
 
-        
+        public async Task Save(Mission mission)
+        {
+            _context.Missions.Add(mission);
+            _context.SaveChanges();
+        }
     }
 }
