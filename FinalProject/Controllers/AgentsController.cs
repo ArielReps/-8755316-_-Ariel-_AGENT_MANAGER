@@ -22,7 +22,7 @@ namespace FinalProjectAPI.Controllers
         public async Task<IActionResult> Create([FromBody] CreateAgent agent)
         {
             // הסרוויס מייצר מטרה ללא מיקום התחלתי
-            int id = await _service.Create(agent.Nickname, agent.Photo_url);
+            int id = await _service.Create(agent.Nickname, agent.PhotoUrl);
 
             return Created("", new { Id = id }); // מחזיר את המזהה שנוצר
         }
@@ -47,10 +47,10 @@ namespace FinalProjectAPI.Controllers
 
         [HttpPut]
         [Route("{id}/move")]
-        public async Task<IActionResult> Move([FromBody] Direction direction)
+        public async Task<IActionResult> Move([FromBody] Direction direction, [FromRoute] int id)
         {
             // לוגיקה שמעדכנת את המיקום לפי המזהה שנשלח
-            await _service.Move(direction.Horizontal, direction.Vertical);
+            await _service.Move(id, direction.Horizontal, direction.Vertical);
 
             return Ok();
         }

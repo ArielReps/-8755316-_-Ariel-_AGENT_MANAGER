@@ -24,7 +24,7 @@ namespace FinalProjectAPI.Controllers
         public async Task<IActionResult> Create([FromBody] CreateTarget target)
         {
             // הסרוויס מייצר מטרה ללא מיקום התחלתי
-            int id = await _service.Create(target.Name, target.Position, target.Photo_url);
+            int id = await _service.Create(target.Name, target.Position, target.PhotoUrl);
 
             return Created("", new { Id = id }); // מחזיר את המזהה שנוצר
         }
