@@ -1,6 +1,7 @@
 ﻿using FinalProjectAPI.Data;
 using FinalProjectAPI.Models;
 using FinalProjectAPI.Services.IServices;
+using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 
 namespace FinalProjectAPI.Services
@@ -12,44 +13,69 @@ namespace FinalProjectAPI.Services
         {
             _context = db;
         }
-        public Task<int> Create(string name, string image)
+        public async Task<int> Create(string name, string image)
         {
-            throw new NotImplementedException();
+            Agent agent = new()
+            {
+                Name = name,
+                Image = image
+            };
+            await _context.AddAsync(agent);
+            await _context.SaveChangesAsync();
+            return agent.Id;
         }
 
-        public Task<int> Create(Agent agent)
+        public async Task<int> Create(Agent agent)
         {
-            throw new NotImplementedException();
+            await _context.AddAsync(agent);
+            await _context.SaveChangesAsync();
+            return agent.Id;
         }
 
-        public Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            throw new NotImplementedException();
+            Agent? agent = await _context.Agents.FindAsync(id);
+            if (agent == null) return false;
+            _context.Agents.Remove(agent);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        public Task<Agent> GetById(int id)
+        public async Task<Agent?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _context.Agents.FindAsync(id);
         }
 
-        public Task<IEnumerable<Agent>> GetAllAgents()
+        public async Task<IEnumerable<Agent>> GetAllAgents()
         {
-            throw new NotImplementedException();
+            List<Agent> agents = await _context.Agents.ToListAsync();
+            return agents;
         }
 
-        public Task InitializeLocation(Agent agent, Point point)
+        public async Task InitializeLocation(Agent agent, Point point)
         {
-            throw new NotImplementedException();
+            agent.Location = point;
+            await _context.SaveChangesAsync();
         }
 
-        public Task Move(int x, int y)
+        public async Task Move(int id, int x, int y)
         {
-            throw new NotImplementedException();
+            Agent? agent = await _context.Agents.FindAsync(id);
+            if (agent == null) return;
+            agent.LocationX += x;
+            agent.LocationY += y;
+            await _context.SaveChangesAsync();
         }
 
-        public Task Update(Agent agent)
+        public async Task<bool> Update(Agent agent)
         {
-            throw new NotImplementedException();
+            Agent? old = await _context.Agents.FindAsync(agent.Id);
+            if (old == null) return false;
+            agent.Location = old.Location;
+            agent.Name = old.Name;
+            agent.Image = old.Image;
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }
