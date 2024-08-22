@@ -19,6 +19,7 @@ namespace FinalProjectAPI.Controllers
         }
 
         [HttpPost]
+        [Route("Update")]
         public async Task<IActionResult> Update()
         {
             // רענון הסוכנים לכיוון המטרה, אם יש להם כזו
@@ -36,10 +37,10 @@ namespace FinalProjectAPI.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public async Task<IActionResult> MissionConfirmation([FromBody] MissionStatus status)
+        public async Task<IActionResult> MissionConfirmation([FromBody] MissionStatus status, [FromRoute] int id)
         {
             // המשתמש שולח עדכון סטטוס ובכל מאשר יציאה למשימה
-            await _service.ChangeStatus(status);
+            bool success = await _service.UpdateStatus(id, status);
             return NoContent();
         }
     }
