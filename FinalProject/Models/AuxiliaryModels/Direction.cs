@@ -23,4 +23,7 @@
         }
 
     }
+
+    public record RecDirection(int x, int y);
 }
+
