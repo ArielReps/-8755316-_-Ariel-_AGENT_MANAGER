@@ -3,6 +3,6 @@
     public class CreateAgent
     {
         public string Nickname { get; set; }
-        public string Photo_url { get; set; }
+        public string PhotoUrl { get; set; }
     }
 }
