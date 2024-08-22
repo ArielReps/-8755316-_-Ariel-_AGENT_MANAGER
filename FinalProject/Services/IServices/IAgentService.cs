@@ -7,12 +7,12 @@ namespace FinalProjectAPI.Services.IServices
     {
         Task<int> Create(string name, string image);
         Task<int> Create(Agent agent);
-        Task Update(Agent agent);
-        Task Delete(int id);
+        Task<bool> Update(Agent agent);
+        Task<bool> Delete(int id);
 
         Task<IEnumerable<Agent>> GetAllAgents();
-        Task<Agent> GetById(int id);
-        Task Move(int x, int y);
+        Task<Agent?> GetById(int id);
+        Task Move(int id, int x, int y);
         Task InitializeLocation(Agent agent, Point point);
     }
 }
