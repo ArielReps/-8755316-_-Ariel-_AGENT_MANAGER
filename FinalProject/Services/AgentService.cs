@@ -9,9 +9,11 @@ namespace FinalProjectAPI.Services
     public class AgentService : IAgentService
     {
         private readonly AppDbContext _context;
-        public AgentService(AppDbContext db)
+        private readonly IControlService _controlService;
+        public AgentService(AppDbContext db, IControlService controlService)
         {
             _context = db;
+            _controlService = controlService;
         }
         public async Task<int> Create(string name, string image)
         {
@@ -56,6 +58,10 @@ namespace FinalProjectAPI.Services
         {
             agent.Location = point;
             await _context.SaveChangesAsync();
+            List<Target> targets = await _context.Targets.ToListAsync();
+            List<Agent> agents = await _context.Agents.ToListAsync();
+            List<Mission> missions = await _context.Missions.ToListAsync();
+            _controlService.SetOffers(_controlService.GetSuitabilities(agents, targets, missions));
         }
 
         public async Task Move(int id, int x, int y)
@@ -65,6 +71,10 @@ namespace FinalProjectAPI.Services
             agent.LocationX += x;
             agent.LocationY += y;
             await _context.SaveChangesAsync();
+            List<Target> targets = await _context.Targets.ToListAsync();
+            List<Agent> agents = await _context.Agents.ToListAsync();
+            List<Mission> missions = await _context.Missions.ToListAsync();
+            _controlService.SetOffers(_controlService.GetSuitabilities(agents, targets, missions));
         }
 
         public async Task<bool> Update(Agent agent)
