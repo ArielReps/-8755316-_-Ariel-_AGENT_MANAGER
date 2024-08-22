@@ -12,44 +12,71 @@ namespace FinalProjectAPI.Services
         {
             _context = db;
         }
-        public Task<int> Create(string name, string role, string image)
+        public async Task<int> Create(string name, string role, string image)
         {
-            throw new NotImplementedException();
+            Target target = new()
+            {
+                Name = name,
+                Role = role,
+                Image = image
+            };
+            _context.Targets.Add(target);
+            await _context.SaveChangesAsync();
+            return target.Id;
         }
 
-        public Task<int> Create(Target target)
+        public async Task<int> Create(Target target)
         {
-            throw new NotImplementedException();
+            _context.Targets.Add(target);
+            await _context.SaveChangesAsync();
+            return target.Id;
         }
 
-        public Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            throw new NotImplementedException();
+            Target? target = await _context.Targets.FindAsync(id);
+            if (target == null) return false;
+            _context.Targets.Remove(target);
+            await _context.SaveChangesAsync();
+            return true;
         }
 
-        public Task<Target> GetById(int id)
+        public async Task<Target?> GetById(int id)
         {
-            throw new NotImplementedException();
+            Target? target = await _context.Targets.FindAsync(id);
+            return target;
         }
 
-        public Task<IEnumerable<Target>> GetAllTargets()
+        public async Task<IEnumerable<Target>> GetAllTargets()
         {
-            throw new NotImplementedException();
+            return _context.Targets.ToList();
         }
 
-        public Task InitializeLocation(Target target, Point point)
+        public async Task InitializeLocation(Target target, Point point)
         {
-            throw new NotImplementedException();
+            target.Location = point;
+            await _context.SaveChangesAsync();
         }
 
-        public Task Move(int x, int y)
+        public async Task Move(int id, int x, int y)
         {
-            throw new NotImplementedException();
+            Target? target = await _context.Targets.FindAsync(id);
+            if (target == null) return;
+            target.LocationX += x; target.LocationY += y;
+            await _context.SaveChangesAsync();
         }
 
-        public Task Update(Target target)
+        public async Task<bool> Update(Target target)
         {
-            throw new NotImplementedException();
+            Target? old = await _context.Targets.FindAsync(target.Id);
+            if (old == null) return false;
+            old.Name = target.Name;
+            old.Status = target.Status;
+            old.Role = target.Role;
+            old.Image = target.Image;
+            old.Location = target.Location;
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }
