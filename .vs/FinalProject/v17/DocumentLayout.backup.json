@@ -7,36 +7,36 @@
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\controlservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\icontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\icontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\targetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\imissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\iservices\\icontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\iservices\\icontrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\services\\missionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\models\\auxiliarymodels\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|solutionrelative:finalproject\\models\\auxiliarymodels\\direction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF37DAB-2501-4D75-937C-578363A2EA86}|FinalProject\\FinalProjectAPI.csproj|c:\\users\\internet\\source\\repos\\finalproject\\finalproject\\finalproject\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -110,8 +110,8 @@
               "Title": "ControlService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\ControlService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\ControlService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\ControlService.cs*",
-              "RelativeToolTip": "FinalProject\\Services\\ControlService.cs*",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\ControlService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\ControlService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAMwCAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T11:45:10.808Z",
@@ -119,12 +119,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IControlService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IControlService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\IServices\\IControlService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IControlService.cs*",
-              "RelativeToolTip": "FinalProject\\Services\\IServices\\IControlService.cs*",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IControlService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\IServices\\IControlService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T11:44:54.416Z",
@@ -132,12 +132,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "IMissionService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IMissionService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\IServices\\IMissionService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IMissionService.cs*",
-              "RelativeToolTip": "FinalProject\\Services\\IServices\\IMissionService.cs*",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\IServices\\IMissionService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\IServices\\IMissionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T06:53:47.703Z",
@@ -145,25 +145,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
               "RelativeDocumentMoniker": "FinalProject\\Program.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs*",
-              "RelativeToolTip": "FinalProject\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeToolTip": "FinalProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T06:42:44.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Direction.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
               "RelativeDocumentMoniker": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs*",
-              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs*",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
+              "RelativeToolTip": "FinalProject\\Models\\AuxiliaryModels\\Direction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T06:56:02.215Z",
@@ -349,17 +349,17 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "TargetService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\TargetService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\TargetService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\TargetService.cs*",
-              "RelativeToolTip": "FinalProject\\Services\\TargetService.cs*",
-              "ViewState": "AgIAAAIAAAAAAAAAAAARwEkAAABIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\TargetService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\TargetService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAARwEkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:37:22.604Z",
               "EditorCaption": ""
@@ -370,21 +370,21 @@
               "Title": "AgentService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\AgentService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\AgentService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\AgentService.cs*",
-              "RelativeToolTip": "FinalProject\\Services\\AgentService.cs*",
-              "ViewState": "AgIAAAgAAAAAAAAAAMA9wEEAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\AgentService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\AgentService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAEA5wEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:36:50.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MissionService.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\MissionService.cs",
               "RelativeDocumentMoniker": "FinalProject\\Services\\MissionService.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\MissionService.cs*",
-              "RelativeToolTip": "FinalProject\\Services\\MissionService.cs*",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Services\\MissionService.cs",
+              "RelativeToolTip": "FinalProject\\Services\\MissionService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:42:31.657Z",
@@ -392,13 +392,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "MissionsController.cs",
               "DocumentMoniker": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs",
               "RelativeDocumentMoniker": "FinalProject\\Controllers\\MissionsController.cs",
-              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs*",
-              "RelativeToolTip": "FinalProject\\Controllers\\MissionsController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\Controllers\\MissionsController.cs",
+              "RelativeToolTip": "FinalProject\\Controllers\\MissionsController.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAARwBUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-22T07:27:58.943Z",
               "EditorCaption": ""

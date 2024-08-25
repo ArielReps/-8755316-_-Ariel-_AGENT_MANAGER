@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\FinalProjectAPI.csproj",
+      "projectUniqueName": "C:\\Users\\internet\\source\\repos\\FinalProjectWEB\\FinalProject\\FinalProjectAPI.csproj",
       "projectName": "FinalProjectAPI",
-      "projectPath": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\FinalProjectAPI.csproj",
+      "projectPath": "C:\\Users\\internet\\source\\repos\\FinalProjectWEB\\FinalProject\\FinalProjectAPI.csproj",
       "packagesPath": "C:\\Users\\internet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\internet\\source\\repos\\FinalProject\\FinalProject\\FinalProject\\obj\\",
+      "outputPath": "C:\\Users\\internet\\source\\repos\\FinalProjectWEB\\FinalProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
