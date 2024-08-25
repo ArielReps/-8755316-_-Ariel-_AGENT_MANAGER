@@ -1,6 +1,9 @@
+using FinalProjectWEB.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddSingleton<IHttpService, HttpService>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -22,6 +25,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Missions}/{action=Offers}/{id?}/{m?}");
 
 app.Run();

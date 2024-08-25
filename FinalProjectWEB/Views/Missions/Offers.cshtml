@@ -1,0 +1,47 @@
+﻿@using FinalProjectWEB.Models.AuxiliaryModels;
+@model IEnumerable<FinalProjectWEB.Models.Mission>
+
+@{
+    ViewData["Title"] = "Offers";
+}
+
+<h1>Offers</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Agent.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Target.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Agent.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Target.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>@* 
+                <a href="/missions/details/@item.AgentId/@item.TargetId">Details</a> | 
+                <a href="/missions/confirm?aid=(@item.AgentId)&tid=(@item.TargetId)">Confirm</a> *@
+                @Html.ActionLink("Confirm", "Confirm", new { id = item.AgentId, m = item.TargetId}) |
+                @Html.ActionLink("Details", "Details", new { id = item.AgentId, m = item.TargetId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

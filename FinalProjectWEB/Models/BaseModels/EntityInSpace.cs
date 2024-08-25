@@ -11,18 +11,18 @@ namespace FinalProjectWEB.Models.BaseModels
         public int LocationX { get; set; }
         public int LocationY { get; set; }
 
-        [NotMapped]
-        public Point Location
-        {
-            get
-            {
-                return new Point(LocationX, LocationY);
-            }
-            set
-            {
-                LocationX = value.X;
-                LocationY = value.Y;
-            }
-        }
+        //[NotMapped]
+        //public Point Location
+        //{
+        //    get
+        //    {
+        //        return new Point(LocationX, LocationY);
+        //    }
+        //    set
+        //    {
+        //        LocationX = value.X;
+        //        LocationY = value.Y;
+        //    }
+        //}
     }
 }

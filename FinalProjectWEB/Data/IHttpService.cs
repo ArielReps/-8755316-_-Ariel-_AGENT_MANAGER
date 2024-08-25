@@ -10,7 +10,7 @@ namespace FinalProjectWEB.Data
         Task<IEnumerable<Target>> GetTargetsAsync();
         Task<IEnumerable<Mission>> GetMissionsAsync();
         Task<IEnumerable<Mission>> GetMissionsOffersAsync();
-        Task<int> ConfirmMission(MissionStatus status);
-        Task<Token> Login(string userString); 
+        Task<bool> ConfirmMission(int aid, int tid, MissionStatus status);
+        Task<LoginModel> Login(string userString); 
     }
 }

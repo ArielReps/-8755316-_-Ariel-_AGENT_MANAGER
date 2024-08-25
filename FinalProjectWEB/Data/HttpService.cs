@@ -1,39 +1,106 @@
 ﻿using FinalProjectWEB.Models;
 using FinalProjectWEB.Models.AuxiliaryModels;
 using FinalProjectWEB.Models.BaseModels;
+using Newtonsoft.Json;
 
 namespace FinalProjectWEB.Data
 {
     public class HttpService : IHttpService
     {
-        public Task<int> ConfirmMission(MissionStatus status)
+        private readonly string _url = "http://localhost:5008/";
+        private readonly HttpClient _client;
+        private static readonly string _token = "";
+        public HttpService()
         {
-            throw new NotImplementedException();
+            _client = new HttpClient();
+        }
+        
+        public async Task<bool> ConfirmMission(int aid, int tid, MissionStatus status)
+        {
+            try
+            {
+                var response = await _client.PostAsJsonAsync(_url + $"missions/{aid}/{tid}", status);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        public Task<IEnumerable<Agent>> GetAgentsAsync()
+        public async Task<IEnumerable<Agent>> GetAgentsAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _client.GetAsync(_url + "agents");
+                string json = await response.Content.ReadAsStringAsync();
+                IEnumerable<Agent> agents = JsonConvert.DeserializeObject<IEnumerable<Agent>>(json)!;
+                return agents;
+            }catch (Exception ex)
+            {
+                throw new Exception("Can't connected");
+            }
         }
 
-        public Task<IEnumerable<Mission>> GetMissionsAsync()
+        public async Task<IEnumerable<Mission>> GetMissionsAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _client.GetAsync(_url + "missions");
+                string json = await response.Content.ReadAsStringAsync();
+                IEnumerable<Mission> missions = JsonConvert.DeserializeObject<IEnumerable<Mission>>(json)!;
+                return missions;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Can't connected");
+            }
         }
 
-        public Task<IEnumerable<Mission>> GetMissionsOffersAsync()
+        public async Task<IEnumerable<Mission>> GetMissionsOffersAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _client.GetAsync(_url + "missions/offers");
+                string json = await response.Content.ReadAsStringAsync();
+                IEnumerable<Mission> missions = JsonConvert.DeserializeObject<IEnumerable<Mission>>(json)!;
+                return missions;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Can't connected");
+            }
         }
 
-        public Task<IEnumerable<Target>> GetTargetsAsync()
+        public async Task<IEnumerable<Target>> GetTargetsAsync()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _client.GetAsync(_url + "agents");
+                string json = await response.Content.ReadAsStringAsync();
+                IEnumerable<Target> targets = JsonConvert.DeserializeObject<IEnumerable<Target>>(json)!;
+                return targets;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Can't connected");
+            }
         }
 
-        public Task<Token> Login(string userString)
+        public async Task<LoginModel> Login(string userString)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var response = await _client.PostAsJsonAsync(_url + "login", userString);
+                string json = await response.Content.ReadAsStringAsync();
+                LoginModel lm = JsonConvert.DeserializeObject<LoginModel>(json)!;
+                Console.WriteLine(lm.token);
+                return lm;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Can't connected");
+            }
         }
     }
 }

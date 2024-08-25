@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FinalProjectWEB
 build_property.RootNamespace = FinalProjectWEB
@@ -18,12 +26,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\internet\source\repos\FinalProjectWEB\FinalProjectWEB
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Data/Agents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxBZ2VudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Data/Missions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVxNaXNzaW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Missions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Missions/Offers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvbnNcT2ZmZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/internet/source/repos/FinalProjectWEB/FinalProjectWEB/Views/Shared/Error.cshtml]
