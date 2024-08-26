@@ -1,26 +1,27 @@
-﻿@model IEnumerable<FinalProjectWEB.Models.Agent>
+﻿@model IEnumerable<FinalProjectWEB.Models.BaseModels.EntityInSpace>
 
 @{
-    ViewData["Title"] = "Agents";
+    ViewData["Title"] = "Matrix";
 }
-@section reload{
-    <script>
-        setInterval(() => {
-            location.reload();
-        }, 5000);
-    </script>
-}
-<h1>Agents</h1>
+<style>
+    canvas {
+        border: 1px solid black;
+    }
+</style>
+<h1>Matrix</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
+
+<canvas id="matrixCanvas" width="1000" height="1000"></canvas>
+@section reload{
+    <script src="~/js/Matrix.js"></script>
+}
+
+
+
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
@@ -42,9 +43,6 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Id)
             </td>

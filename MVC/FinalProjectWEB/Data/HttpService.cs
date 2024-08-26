@@ -19,7 +19,7 @@ namespace FinalProjectWEB.Data
         {
             try
             {
-                var response = await _client.PostAsJsonAsync(_url + $"missions/{aid}/{tid}", status);
+                var response = await _client.PutAsJsonAsync(_url + $"missions/{aid}/{tid}", status);
                 return true;
             }
             catch (Exception ex)
@@ -76,7 +76,7 @@ namespace FinalProjectWEB.Data
         {
             try
             {
-                var response = await _client.GetAsync(_url + "agents");
+                var response = await _client.GetAsync(_url + "targets");
                 string json = await response.Content.ReadAsStringAsync();
                 IEnumerable<Target> targets = JsonConvert.DeserializeObject<IEnumerable<Target>>(json)!;
                 return targets;
@@ -101,6 +101,36 @@ namespace FinalProjectWEB.Data
             {
                 throw new Exception("Can't connected");
             }
+        }
+
+        public async Task<IEnumerable<EntityInSpace>> GetEntitiesAsync()
+        {
+            List<EntityInSpace> entities = new List<EntityInSpace>();
+            try
+            {
+                var response = await _client.GetAsync(_url + "targets");
+                string json = await response.Content.ReadAsStringAsync();
+                IEnumerable<Target> targets = JsonConvert.DeserializeObject<List<Target>>(json)!;
+                targets = targets.Where(t => t.Status != TargetStatus.Eliminated).ToList();
+
+                response = await _client.GetAsync(_url + "agents");
+                json = await response.Content.ReadAsStringAsync();
+                IEnumerable<Agent> agents = JsonConvert.DeserializeObject<List<Agent>>(json)!;
+
+                foreach (var item in targets)
+                {
+                    entities.Add(item);
+                }
+                foreach (var item in agents)
+                {
+                    entities.Add(item);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Can't connected");
+            }
+            return entities;
         }
     }
 }

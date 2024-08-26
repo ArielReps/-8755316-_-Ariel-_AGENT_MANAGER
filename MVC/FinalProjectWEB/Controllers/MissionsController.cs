@@ -1,5 +1,6 @@
 ﻿using FinalProjectWEB.Data;
 using FinalProjectWEB.Models;
+using FinalProjectWEB.Models.BaseModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProjectWEB.Controllers
@@ -23,7 +24,7 @@ namespace FinalProjectWEB.Controllers
         [Route("/missions/confirm/{aid}/{tid}")]
         public IActionResult Confirm([FromRoute] int aid, [FromRoute] int tid)
         {
-            _service.ConfirmMission(Models.BaseModels.MissionStatus.Active);
+            _service.ConfirmMission(aid, tid, Models.BaseModels.MissionStatus.Active);
             return RedirectToAction("Offers");
         }
 
@@ -31,6 +32,12 @@ namespace FinalProjectWEB.Controllers
         {
             IEnumerable<Mission> offers = await _service.GetMissionsOffersAsync();
             return View(offers);
+        }
+
+        public async Task<IActionResult> Matrix()
+        {
+            IEnumerable<EntityInSpace> entities = await _service.GetEntitiesAsync();
+            return View(entities);
         }
     }
 }

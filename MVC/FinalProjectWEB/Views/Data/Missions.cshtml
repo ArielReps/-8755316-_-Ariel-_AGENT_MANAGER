@@ -3,6 +3,13 @@
 @{
     ViewData["Title"] = "Missions";
 }
+@section reload {
+    <script>
+        setInterval(() => {
+            location.reload();
+        }, 5000);
+    </script>
+}
 
 <h1>Missions</h1>
 
