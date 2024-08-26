@@ -6,58 +6,57 @@ using System.Drawing;
 
 namespace FinalProjectAPI.Services
 {
-    public class TargetService : ITargetService
+    public class AgentService : IAgentService
     {
         private readonly AppDbContext _context;
-        private readonly IControlService _controlService;
-        public TargetService(AppDbContext db, IControlService controlService)
+        private readonly ControlService _controlService;
+        public AgentService(AppDbContext db, ControlService controlService)
         {
             _context = db;
             _controlService = controlService;
         }
-        public async Task<int> Create(string name, string role, string image)
+        public async Task<int> Create(string name, string image)
         {
-            Target target = new()
+            Agent agent = new()
             {
                 Name = name,
-                Role = role,
                 Image = image
             };
-            _context.Targets.Add(target);
+            await _context.AddAsync(agent);
             await _context.SaveChangesAsync();
-            return target.Id;
+            return agent.Id;
         }
 
-        public async Task<int> Create(Target target)
+        public async Task<int> Create(Agent agent)
         {
-            _context.Targets.Add(target);
+            await _context.AddAsync(agent);
             await _context.SaveChangesAsync();
-            return target.Id;
+            return agent.Id;
         }
 
         public async Task<bool> Delete(int id)
         {
-            Target? target = await _context.Targets.FindAsync(id);
-            if (target == null) return false;
-            _context.Targets.Remove(target);
+            Agent? agent = await _context.Agents.FindAsync(id);
+            if (agent == null) return false;
+            _context.Agents.Remove(agent);
             await _context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<Target?> GetById(int id)
+        public async Task<Agent?> GetById(int id)
         {
-            Target? target = await _context.Targets.FindAsync(id);
-            return target;
+            return await _context.Agents.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Target>> GetAllTargets()
+        public async Task<IEnumerable<Agent>> GetAllAgents()
         {
-            return _context.Targets.ToList();
+            List<Agent> agents = await _context.Agents.ToListAsync();
+            return agents;
         }
 
-        public async Task InitializeLocation(Target target, Point point)
+        public async Task InitializeLocation(Agent agent, Point point)
         {
-            target.Location = point;
+            agent.Location = point;
             await _context.SaveChangesAsync();
             List<Target> targets = await _context.Targets.ToListAsync();
             List<Agent> agents = await _context.Agents.ToListAsync();
@@ -67,9 +66,13 @@ namespace FinalProjectAPI.Services
 
         public async Task Move(int id, int x, int y)
         {
-            Target? target = await _context.Targets.FindAsync(id);
-            if (target == null) return;
-            target.LocationX += x; target.LocationY += y;
+            Agent? agent = await _context.Agents.FindAsync(id);
+            if (agent == null) return;
+            // מוודא שאנחנו לא מוציאים אותו מהגבולות
+            if (agent.LocationX + x > 1000 || agent.LocationY + y > 1000) return;
+            if (agent.LocationX + x < 1 || agent.LocationY + y < 1) return;
+            agent.LocationX += x;
+            agent.LocationY += y;
             await _context.SaveChangesAsync();
             List<Target> targets = await _context.Targets.ToListAsync();
             List<Agent> agents = await _context.Agents.ToListAsync();
@@ -77,15 +80,13 @@ namespace FinalProjectAPI.Services
             _controlService.SetOffers(_controlService.GetSuitabilities(agents, targets, missions));
         }
 
-        public async Task<bool> Update(Target target)
+        public async Task<bool> Update(Agent agent)
         {
-            Target? old = await _context.Targets.FindAsync(target.Id);
+            Agent? old = await _context.Agents.FindAsync(agent.Id);
             if (old == null) return false;
-            old.Name = target.Name;
-            old.Status = target.Status;
-            old.Role = target.Role;
-            old.Image = target.Image;
-            old.Location = target.Location;
+            agent.Location = old.Location;
+            agent.Name = old.Name;
+            agent.Image = old.Image;
             await _context.SaveChangesAsync();
             return true;
         }

@@ -12,7 +12,6 @@ namespace FinalProjectAPI.Services.IServices
         Task DirectMission();
         Task<IEnumerable<Mission>> GetMissions();
         Task<IEnumerable<Mission>> OfferMissions();
-        Task<bool> UpdateStatus(int id, MissionStatus status);
-        Task<bool> UpdateStatus(Mission mission, MissionStatus status);
+        Task<bool> UpdateStatus(int aid, int tid, MissionStatus status);
     }
 }

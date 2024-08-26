@@ -24,7 +24,7 @@ namespace FinalProjectAPI.Data
                 .HasForeignKey(e => e.TargetId);
 
             modelBuilder.Entity<Mission>()
-                .HasKey(m => new { m.AgentId, m.TargetId });
+                .HasKey(m => m.Id);
         }
     }
 }

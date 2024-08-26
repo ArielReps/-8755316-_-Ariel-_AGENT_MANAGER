@@ -8,8 +8,8 @@ namespace FinalProjectAPI.Models.BaseModels
         public int Id { get; set; }
         public string Name { get; set; }
         public string Image { get; set; } = "";
-        public int LocationX { get; set; }
-        public int LocationY { get; set; }
+        public int LocationX { get; set; } = -1;
+        public int LocationY { get; set; } = -1;
 
         [NotMapped]
         public Point Location

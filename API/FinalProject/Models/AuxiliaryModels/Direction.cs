@@ -2,6 +2,7 @@
 {
     public class Direction
     {
+        public string Token { get; set; }
         public string direction {  get; set; }
         public int Horizontal
         {

@@ -13,9 +13,11 @@ namespace FinalProjectAPI.Controllers
     public class MissionsController : ControllerBase
     {
         private readonly IMissionService _service;
-        public MissionsController(IMissionService ms)
+        private readonly ILogger<MissionsController> _logger;
+        public MissionsController(IMissionService ms, ILogger<MissionsController> logger)
         {
             _service = ms;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -35,12 +37,23 @@ namespace FinalProjectAPI.Controllers
             return Ok(missions);
         }
 
-        [HttpPut]
-        [Route("{id}")]
-        public async Task<IActionResult> MissionConfirmation([FromBody] MissionStatus status, [FromRoute] int id)
+        [HttpGet]
+        [Route("offers")]
+        public async Task<IActionResult> GetOffers()
         {
-            // המשתמש שולח עדכון סטטוס ובכל מאשר יציאה למשימה
-            bool success = await _service.UpdateStatus(id, status);
+            
+            // שליפת כל המשימות ממסד הנתונים
+            IEnumerable<Mission> missions = await _service.OfferMissions();
+            return Ok(missions);
+        }
+
+        [HttpPut]
+        [Route("{aid}/{tid}")]
+        public async Task<IActionResult> MissionConfirmation([FromBody] MissionStatus status, [FromRoute] int aid, [FromRoute] int tid)
+        {
+            // המשתמש שולח עדכון סטטוס ובכך מאשר יציאה למשימה
+            bool success = await _service.UpdateStatus(aid, tid, status);
+
             return NoContent();
         }
     }

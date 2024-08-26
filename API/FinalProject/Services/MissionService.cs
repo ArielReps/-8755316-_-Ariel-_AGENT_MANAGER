@@ -10,10 +10,10 @@ namespace FinalProjectAPI.Services
     public class MissionService : IMissionService
     {
         private readonly AppDbContext _context;
-        private readonly IControlService _controlService;
+        private readonly ControlService _controlService;
 
         
-        public MissionService(AppDbContext db, IControlService controlService)
+        public MissionService(AppDbContext db, ControlService controlService)
         {
             _context = db;
             _controlService = controlService;
@@ -27,33 +27,69 @@ namespace FinalProjectAPI.Services
             return true;
         }
 
-        public async Task<bool> UpdateStatus(Mission mission, MissionStatus status)
+        public async Task<bool> UpdateStatus(int aid, int tid, MissionStatus status)
         {
-            mission.Status = status;
+            Agent agent = await _context.Agents.FindAsync(aid);
+            agent.Status = AgentStatus.Active;
+            Target target = await _context.Targets.FindAsync(tid);
+            Mission n = new()
+            {
+                Agent = agent,
+                AgentId = aid,
+                Target = target,
+                TargetId = tid,
+                Status = status,
+                StartDate = DateTime.Now
+            };
+            _context.Missions.Add(n);
             await _context.SaveChangesAsync();
             return true;
         }
 
         public async Task DirectMission()
         {
-            List<Mission> missions = await _context.Missions.ToListAsync();
+            List<Mission> missions = await _context.Missions.Include(x => x.Agent).Include(x => x.Target).ToListAsync();
             foreach (var mission in missions)
             {
                 RecDirection dir = _controlService.DirectAgent(mission);
                 mission.Agent.LocationX += dir.x;
                 mission.Agent.LocationY += dir.y;
+                if (mission.Agent.LocationX == mission.Target.LocationX
+                && mission.Agent.LocationY == mission.Target.LocationY)
+                {
+                    mission.Status = MissionStatus.Done;
+                    mission.Agent.Status = AgentStatus.Dormant;
+                    mission.Target.Status = TargetStatus.Eliminated;
+                    mission.ExecutionDate = DateTime.Now;
+                }
             }
             await _context.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Mission>> GetMissions()
         {
-            return await _context.Missions.ToListAsync();
+            IEnumerable<Mission> missions = await _context.Missions.ToListAsync();
+            foreach (var item in missions)
+            {
+                item.Agent = await _context.Agents.FindAsync(item.AgentId);
+                item.Target = await _context.Targets.FindAsync(item.TargetId);
+                item.EstimatedTime = _controlService.GetTime(item);
+            }
+            return missions;
         }
 
         public async Task<IEnumerable<Mission>> OfferMissions()
         {
-            return _controlService.GetMissionOffers();
+            List<Target> targets = await _context.Targets.ToListAsync();
+            List<Agent> agents = await _context.Agents.ToListAsync();
+            List<Mission> missions = await _context.Missions.ToListAsync();
+            _controlService.SetOffers(_controlService.GetSuitabilities(agents, targets, missions));
+            IEnumerable<Mission> offeredMissions = _controlService.GetMissionOffers();
+            foreach (var item in offeredMissions)
+            {
+                item.EstimatedTime = _controlService.GetTime(item);
+            }
+            return offeredMissions;
         }
 
         public async Task<MissionPK> Create(int agentId, int targetId)

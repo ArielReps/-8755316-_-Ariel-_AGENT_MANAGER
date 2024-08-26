@@ -1,28 +1,32 @@
 ﻿using FinalProjectAPI.Data;
+using FinalProjectAPI.Models;
 using FinalProjectAPI.Models.AuxiliaryModels;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using FinalProjectAPI.Services;
 using FinalProjectAPI.Services.IServices;
-using FinalProjectAPI.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FinalProjectAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class AgentsController : ControllerBase
+    public class TargetsController : ControllerBase
     {
-        private readonly IAgentService _service;
-        public AgentsController(IAgentService ag)
+        private readonly ITargetService _service;
+        private readonly ILogger<TargetsController> _logger;
+        public TargetsController(ITargetService ts, ILogger<TargetsController> logger)
         {
-            _service = ag;
+            _service = ts;
+            _logger = logger;
         }
 
+        // סימולטור
+        // מייצר מטרה חדשה
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateAgent agent)
+        public async Task<IActionResult> Create([FromBody] CreateTarget target)
         {
             // הסרוויס מייצר מטרה ללא מיקום התחלתי
-            int id = await _service.Create(agent.Nickname, agent.PhotoUrl);
+            int id = await _service.Create(target.Name, target.Position, target.PhotoUrl);
 
             return Created("", new { Id = id }); // מחזיר את המזהה שנוצר
         }
@@ -30,9 +34,9 @@ namespace FinalProjectAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            IEnumerable<Agent> agents = await _service.GetAllAgents();
+            IEnumerable<Target> targets = await _service.GetAllTargets();
 
-            return Ok(agents);  // להחזיר כאן את אובייקט הרשימה
+            return Ok(targets);  // להחזיר כאן את אובייקט הרשימה
         }
 
         [HttpPut]
@@ -40,8 +44,8 @@ namespace FinalProjectAPI.Controllers
         public async Task<IActionResult> Pin([FromBody] Location location, [FromRoute] int id)
         {
             // לוגיקה שקובעת מטרה שזה עתה נוצרה ונותנת לה נקודות על הצירים
-            Agent agent = await _service.GetById(id);
-            await _service.InitializeLocation(agent, new System.Drawing.Point(location.X, location.Y));
+            Target target = await _service.GetById(id);
+            await _service.InitializeLocation(target, new System.Drawing.Point(location.X, location.Y));
             return Ok();
         }
 
