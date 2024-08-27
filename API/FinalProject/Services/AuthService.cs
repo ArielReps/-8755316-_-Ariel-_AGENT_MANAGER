@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using FinalProjectAPI.Models.AuxiliaryModels;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -13,29 +14,42 @@ namespace FinalProjectAPI.Services
             _configuration = configuration;
         }
 
-        public string GenerateToken(string userString)
+        public string Create(AuthModel user)
         {
-            string key = _configuration.GetValue("Jwt:Key", string.Empty)
-                ?? throw new InvalidOperationException("JWT key is missing");
-
-            int expiration = _configuration.GetValue("Jwt:ExpiryInMinutes", 15);
-
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-
-            var claims = new[]
+            if (user.Name == null)
             {
-                new Claim(ClaimTypes.NameIdentifier, userString)
+                return string.Empty;
+            }
+
+            var handler = new JwtSecurityTokenHandler();
+
+            var privateKey = Encoding.UTF8.GetBytes(_configuration.GetValue("Jwt:Key", "none"));
+
+            var credentials = new SigningCredentials(
+                        new SymmetricSecurityKey(privateKey),
+                        SecurityAlgorithms.HmacSha256);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                SigningCredentials = credentials,
+                Expires = DateTime.UtcNow.AddHours(1),
+                Subject = GenerateClaims(user)
             };
 
-            var token = new JwtSecurityToken(
-                issuer: _configuration["Jwt:Issuer"],
-                //expires: DateTime.Now.AddMinutes(expiration),
-                //claims: claims,
-                signingCredentials: credentials
-                );
+            var token = handler.CreateToken(tokenDescriptor);
+            return handler.WriteToken(token);
+        }
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+        private static ClaimsIdentity GenerateClaims(AuthModel user)
+        {
+            var ci = new ClaimsIdentity();
+
+            ci.AddClaim(new Claim(ClaimTypes.Name, user.Name));
+
+            foreach (var role in user.Roles)
+                ci.AddClaim(new Claim(ClaimTypes.Role, role));
+
+            return ci;
         }
     }
 }
