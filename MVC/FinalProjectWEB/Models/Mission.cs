@@ -12,5 +12,6 @@ namespace FinalProjectWEB.Models
 
         public DateTime StartDate { get; set; }
         public DateTime ExecutionDate { get; set; }
+        public TimeSpan EstimatedTime { get; set; }
     }
 }
