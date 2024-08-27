@@ -1,7 +1,11 @@
 ﻿using FinalProjectWEB.Models;
 using FinalProjectWEB.Models.AuxiliaryModels;
 using FinalProjectWEB.Models.BaseModels;
+using Microsoft.CodeAnalysis.Elfie.Model.Strings;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Net.Http.Headers;
+using System.Security.Policy;
 
 namespace FinalProjectWEB.Data
 {
@@ -9,10 +13,10 @@ namespace FinalProjectWEB.Data
     {
         private readonly string _url = "http://localhost:5008/";
         private readonly HttpClient _client;
-        private static readonly string _token = "";
         public HttpService()
         {
             _client = new HttpClient();
+            Login().Wait();
         }
         
         public async Task<bool> ConfirmMission(int aid, int tid, MissionStatus status)
@@ -32,6 +36,7 @@ namespace FinalProjectWEB.Data
         {
             try
             {
+                Console.WriteLine(_client.DefaultRequestHeaders.Authorization.Parameter);
                 var response = await _client.GetAsync(_url + "agents");
                 string json = await response.Content.ReadAsStringAsync();
                 IEnumerable<Agent> agents = JsonConvert.DeserializeObject<IEnumerable<Agent>>(json)!;
@@ -87,15 +92,14 @@ namespace FinalProjectWEB.Data
             }
         }
 
-        public async Task<LoginModel> Login(string userString)
+        public async Task Login()
         {
             try
             {
-                var response = await _client.PostAsJsonAsync(_url + "login", userString);
-                string json = await response.Content.ReadAsStringAsync();
-                LoginModel lm = JsonConvert.DeserializeObject<LoginModel>(json)!;
-                Console.WriteLine(lm.token);
-                return lm;
+                var res = await _client.PostAsJsonAsync(_url + "login", new {id = "MVCServer" });
+                string json = await res.Content.ReadAsStringAsync();
+                LoginModel model = JsonConvert.DeserializeObject<LoginModel>(json)!;
+                _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", model.token);
             }
             catch (Exception ex)
             {
