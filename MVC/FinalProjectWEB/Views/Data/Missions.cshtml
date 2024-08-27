@@ -34,6 +34,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.ExecutionDate)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstimatedTime)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -54,6 +57,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ExecutionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstimatedTime)
             </td>
             <td>
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })
