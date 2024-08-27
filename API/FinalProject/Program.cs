@@ -18,48 +18,18 @@ builder.Host.UseSerilog((ctx, lc) => lc
     .Enrich.FromLogContext()
     .ReadFrom.Configuration(builder.Configuration));
 
-// הגדרות אימות והרשאה
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = false,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-        };
-    });
-
-// לסוואגר. אמור להמחק בסוף
-builder.Services.AddSwaggerGen(c =>
+builder.Services.AddAuthentication(x =>
 {
-    c.SwaggerDoc("V1", new OpenApiInfo { Title = "Final Project API", Version = "V1"});
-
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.TokenValidationParameters = new TokenValidationParameters
     {
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey,
-        Scheme = "Bearer",
-        BearerFormat = "Jwt",
-        In = ParameterLocation.Header,
-        Description = "Enter 'Bearer' and then your valid token"
-    });
-
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] {}
-        }
-    });
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue("Jwt:Key", "none"))),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
 });
 
 
@@ -76,7 +46,7 @@ builder.Services.AddCors(options =>
 });
 // הוספת סרוויסים
 builder.Services.AddSingleton<ControlService>();
-builder.Services.AddSingleton<AuthService>();
+builder.Services.AddTransient<AuthService>();
 builder.Services.AddScoped<IAgentService, AgentService>();
 builder.Services.AddScoped<ITargetService, TargetService>();
 builder.Services.AddScoped<IMissionService, MissionService>();
