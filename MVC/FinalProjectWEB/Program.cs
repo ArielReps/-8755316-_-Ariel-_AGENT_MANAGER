@@ -1,8 +1,10 @@
 using FinalProjectWEB.Data;
+using FinalProjectWEB.Sockets;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IHttpService, HttpService>();
+builder.Services.AddSignalR();
 
 builder.Services.AddControllersWithViews();
 
@@ -22,6 +24,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapHub<MatrixHub>("hub");
 
 app.MapControllerRoute(
     name: "default",
